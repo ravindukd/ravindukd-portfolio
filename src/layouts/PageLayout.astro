@@ -49,9 +49,7 @@ const jsonLd = {
     <meta name="twitter:title" content={`${title} | ${SITE.NAME}`} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={`https://avatars.githubusercontent.com/u/43919715?v=4`} />
-    <script type="application/ld+json">
-      {JSON.stringify(jsonLd)}
-    </script>
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   </head>
   <body>
     <Header />
