@@ -1,2 +1,1 @@
-# ravindukd-portfolio
-Portfolio Website
+# Personal Website of Ravindu Kavishka
