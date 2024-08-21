@@ -10,12 +10,48 @@ type Props = {
 };
 
 const { title, description } = Astro.props;
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": SITE.NAME,
+  "url": SITE.URL,
+  "sameAs": [
+    "https://www.linkedin.com/in/ravindukd",
+    "https://github.com/ravindukd",
+    "https://twitter.com/ravindukd",
+    "https://www.instagram.com/ravindukdp",
+    "https://www.facebook.com/ravindukd",
+  ],
+  "jobTitle": "Full Stack Software Developer",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Axoten Innovations (pvt) Ltd."
+  },
+  "alumniOf": "Uva Wellassa University",
+  "description": description
+};
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
     <Head title={`${title} | ${SITE.NAME}`} description={description} />
+    <meta name="description" content={description} />
+    <meta name="keywords" content="Industrial Information Technology, Web Development, Mobile Development, Node.js, React.js, Flutter" />
+    <meta name="author" content="Your Name" />
+    <meta property="og:title" content={`${title} | ${SITE.NAME}`} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={SITE.URL} />
+    <meta property="og:image" content={`${SITE.URL}/path-to-your-image.jpg`} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={`${title} | ${SITE.NAME}`} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={`${SITE.URL}/path-to-your-image.jpg`} />
+    <script type="application/ld+json">
+      {JSON.stringify(jsonLd)}
+    </script>
   </head>
   <body>
     <Header />
