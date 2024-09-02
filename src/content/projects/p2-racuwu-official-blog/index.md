@@ -7,7 +7,7 @@ repoURL: "https://github.com/racuwu/racuwu-blog-nextjs"
 ---
 # Official Blog of Rotaract Club of Uva Wellassa University
 
-Welcome to the official blog of the Rotaract Club of Uva Wellassa University. This blog is developed using Next.js and Laravel to provide a seamless and engaging experience for our readers. Stay updated with the latest news, events, and activities of our club.
+The official blog of the Rotaract Club of Uva Wellassa University. This blog is developed using Next.js and Laravel to provide a seamless and engaging experience for our readers. Stay updated with the latest news, events, and activities of the club.
 
 - **Title:** Official Blog of Rotaract Club of Uva Wellassa University
 - **Description:** A blog for the Rotaract Club of Uva Wellassa University. Developed using NextJs and Laravel.
